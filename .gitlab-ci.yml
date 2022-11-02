@@ -5,7 +5,9 @@ mirror:
   stage: publish
   script:
     - setsid ./ci/mirror.sh
-  only:
-    - /^(main.*)$/
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
+      when: never
+    - if: $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
     - mirror
