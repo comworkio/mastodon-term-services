@@ -15,6 +15,6 @@ This document is under the CC-BY-SA originally adapted from the [Discourse priva
 ## Git repositories
 
 * Main repo: https://gitlab.comwork.io/oss/mastodon-term-services.git
-* Github mirror: https://github.com/idrissneumann/ansible-mastodon.git
-* Gitlab mirror: https://gitlab.com/ineumann/ansible-mastodon.git
-* Froggit mirror: https://lab.frogg.it/ineumann/ansible-mastodon.git
+* Github mirror: https://github.com/idrissneumann/mastodon-term-services.git
+* Gitlab mirror: https://gitlab.com/ineumann/mastodon-term-services.git
+* Froggit mirror: https://lab.frogg.it/ineumann/mastodon-term-services.git
