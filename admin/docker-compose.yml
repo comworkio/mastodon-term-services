@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     env_file: 
-      - mastodon-terms.env
+      - mastodon.env
     volumes:
       - ./terms.html:/app/terms.html
     command: ["python3", "/app/terms.py"]
@@ -17,7 +17,7 @@ services:
       context: .
       dockerfile: Dockerfile
     env_file: 
-      - mastodon-rules.env
+      - mastodon.env
     volumes:
       - ./config.yaml:/app/config.yaml
     command: ["python3", "/app/rules.py"]
