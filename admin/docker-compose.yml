@@ -1,0 +1,11 @@
+version: "3.3"
+
+services: 
+  update-tems:
+    container_name: mastodon-update-terms
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file: 
+      - mastodon-terms.env
+    command: ["python3", "/app/terms.py"]

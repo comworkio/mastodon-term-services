@@ -1,13 +1,24 @@
 stages:
-  - publish
+  - init
+  - update
 
-mirror:
-  stage: publish
+init:
+  stage: init
   script:
-    - setsid ./ci/mirror.sh
+    - setsid ./ci/init.sh
   rules: 
     - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
       when: never
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
     - mirror
+
+terms:
+  stage: update
+  script:
+    - setsid ./ci/update-terms.sh
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
+    - if: $CI_COMMIT_REF_NAME =~ /main/ 
+  tags:
+    - mastodon
