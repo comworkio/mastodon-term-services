@@ -2,7 +2,7 @@
 
 source ./ci/compute-env.sh
 
-ENV_FILE="mastodon-terms.env"
+ENV_FILE="./admin/mastodon-terms.env"
 
 echo "${LOG_LEVEL}" > "${ENV_FILE}"
 echo "${DB_HOST}" >> "${ENV_FILE}"
