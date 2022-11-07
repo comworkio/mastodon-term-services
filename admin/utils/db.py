@@ -14,6 +14,6 @@ def get_db_connection():
 def sql_execute(sql, value):
     cx = get_db_connection()
     cursor = cx.cursor()
-    cursor.execute(sql, (value))
+    cursor.execute(sql, (value,))
     cx.commit()
     cursor.close()
