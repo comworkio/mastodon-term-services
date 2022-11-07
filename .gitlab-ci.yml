@@ -17,14 +17,14 @@ terms:
   stage: update
   script:
     - setsid ./ci/update-terms.sh
-  only:
-    refs:
-      - /^(main.*)$/
-    changes:
-      - .gitlab-ci.yml
-      - admin/*
-      - admin/utils/*
-      - ci/update-terms.sh
-      - ci/compute-env.sh
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
+    - if: $CI_COMMIT_REF_NAME =~ /main/ 
+      changes:
+        - .gitlab-ci.yml
+        - admin/*
+        - admin/utils/*
+        - ci/update-terms.sh
+        - ci/compute-env.sh
   tags:
     - mastodon
