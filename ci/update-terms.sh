@@ -13,4 +13,4 @@ echo "DB_PASSWORD=${DB_PASSWORD}" >> "${ENV_FILE}"
 
 cp terms.html ./admin/
 
-docker-compose -f ./admin/docker-compose.yml up --build --force-recreate update-tems
+docker-compose -f ./admin/docker-compose.yml up ${DOCKER_BUILD_OPT} --force-recreate update-tems
