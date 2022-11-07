@@ -12,6 +12,13 @@ The source repository is automatically applying the configuration in a gitops wa
 
 [[_TOC_]]
 
+## Git repositories
+
+* Main repo: https://gitlab.comwork.io/oss/mastodon-term-services.git
+* Github mirror: https://github.com/idrissneumann/mastodon-term-services.git
+* Gitlab mirror: https://gitlab.com/ineumann/mastodon-term-services.git
+* Froggit mirror: https://lab.frogg.it/ineumann/mastodon-term-services.git
+
 ## Licence
 
 The [terms.html](./terms.html) is under the CC-BY-SA originally adapted from the [Discourse privacy policy](https://github.com/discourse/discourse).
@@ -24,9 +31,28 @@ You can fork this project and run it with gitlab-ci and docker, all you have to 
 * Having a gitlab runner hosted in a place that can join your PostgreSQL over TCP
 * Those [environment variables set](./mastodon.env.dist)
 
-## Git repositories
+The ban domains are under the `ban` key in the [config.yaml](./config.yaml) file:
 
-* Main repo: https://gitlab.comwork.io/oss/mastodon-term-services.git
-* Github mirror: https://github.com/idrissneumann/mastodon-term-services.git
-* Gitlab mirror: https://gitlab.com/ineumann/mastodon-term-services.git
-* Froggit mirror: https://lab.frogg.it/ineumann/mastodon-term-services.git
+```yaml
+ban:
+  - domain: hatefuldomain.com
+    comment: Your comment
+```
+
+The rules are under:
+
+```yaml
+rules:
+  - text: No illegal content in France.
+    priority: 10
+  - text: Do not post hateful content. No discrimination will be tolerated.
+    priority: 20
+  - text: Do not harass anyone, participate in group harassment of anyone. Any kind of harassment won't be tolerated.
+    priority: 30
+  - text: Do not post adult content, including pictures containing nudity, or unwelcome sexual attention (including sexualized comments or jokes).
+    priority: 40
+  - text: "Beware about our term of services: https://mastodon.comwork.io/terms"
+    priority: 50
+```
+
+You can adapt those following your convictions and obligations.
