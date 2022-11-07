@@ -9,5 +9,6 @@ COPY . /app/
 
 WORKDIR /app
 
-RUN pip3 install --upgrade pip && \
+RUN apk add --no-cache libpq-dev && \
+    pip3 install --upgrade pip && \
     pip3 install -r requirements.txt
