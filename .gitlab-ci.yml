@@ -18,7 +18,6 @@ terms:
   script:
     - setsid ./ci/update-terms.sh
   rules: 
-    - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
-    - if: $CI_COMMIT_REF_NAME =~ /main/ 
+    - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/ && $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
     - mastodon
