@@ -11,6 +11,4 @@ echo "DB_NAME=${DB_NAME}" >> "${ENV_FILE}"
 echo "DB_USER=${DB_USER}" >> "${ENV_FILE}"
 echo "DB_PASSWORD=${DB_PASSWORD}" >> "${ENV_FILE}"
 
-cp terms.html admin/
-
 docker-compose -f ./admin/docker-compose.yml up --build --force-recreate update-tems
