@@ -21,3 +21,13 @@ services:
     volumes:
       - ./config.yaml:/app/config.yaml
     command: ["python3", "/app/rules.py"]
+  update-ban:
+    container_name: mastodon-update-ban
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file: 
+      - mastodon.env
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    command: ["python3", "/app/ban.py"]

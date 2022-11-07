@@ -18,6 +18,12 @@ The [terms.html](./terms.html) is under the CC-BY-SA originally adapted from the
 
 The python [admin](./admin) code is under the apache 2.0 licence.
 
+## Forking this project
+
+You can fork this project and run it with gitlab-ci and docker, all you have to do is:
+* Having a gitlab runner hosted in a place that can join your PostgreSQL over TCP
+* Those [environment variables set](./mastodon.env.dist)
+
 ## Git repositories
 
 * Main repo: https://gitlab.comwork.io/oss/mastodon-term-services.git

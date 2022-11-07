@@ -10,3 +10,7 @@ rules:
     priority: 40
   - text: "Beware about our term of services: https://mastodon.comwork.io/terms"
     priority: 50
+
+blocked_domains:
+  - domain: leafposter.club
+    comment: Hateful speech coming from users from this instance
