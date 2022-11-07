@@ -1,7 +1,7 @@
 version: "3.3"
 
 services: 
-  update-tems:
+  update-terms:
     container_name: mastodon-update-terms
     build: 
       context: .
@@ -11,3 +11,13 @@ services:
     volumes:
       - ./terms.html:/app/terms.html
     command: ["python3", "/app/terms.py"]
+  update-rules:
+    container_name: mastodon-update-terms
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file: 
+      - mastodon-rules.env
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    command: ["python3", "/app/rules.py"]

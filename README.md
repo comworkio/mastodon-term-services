@@ -4,13 +4,19 @@ This is the terms of services of the [mastodon.comwork.io](https://mastodon.comw
 
 You'll find the plain html you can adapt for your own instances here: [terms.html](./terms.html)
 
+You'll also find our rules and banned instances here: [config.yaml](./config.yaml)
+
+The source repository is automatically applying the configuration in a gitops way using this [python project](./admin).
+
 ## Table of content
 
 [[_TOC_]]
 
 ## Licence
 
-This document is under the CC-BY-SA originally adapted from the [Discourse privacy policy](https://github.com/discourse/discourse).
+The [terms.html](./terms.html) is under the CC-BY-SA originally adapted from the [Discourse privacy policy](https://github.com/discourse/discourse).
+
+The python [admin](./admin) code is under the apache 2.0 licence.
 
 ## Git repositories
 

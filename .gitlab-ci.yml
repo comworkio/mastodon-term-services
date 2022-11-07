@@ -21,3 +21,12 @@ terms:
     - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/ && $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
     - mastodon
+
+rules:
+  stage: update
+  script:
+    - setsid ./ci/update-rules.sh
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/ && $CI_COMMIT_REF_NAME =~ /main/ 
+  tags:
+    - mastodon

@@ -11,9 +11,19 @@ _cx = psycopg2.connect(
 def get_db_connection():
     return _cx
 
-def sql_execute(sql, value):
+def sql_exec(sql):
     cx = get_db_connection()
     cursor = cx.cursor()
-    cursor.execute(sql, (value,))
+    cursor.execute(sql)
     cx.commit()
     cursor.close()
+
+def sql_exec_values(sql, values):
+    cx = get_db_connection()
+    cursor = cx.cursor()
+    cursor.execute(sql, values)
+    cx.commit()
+    cursor.close()
+
+def sql_exec_value(sql, value):
+    sql_exec_values(sql, (value,))

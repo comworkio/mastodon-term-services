@@ -1,0 +1,12 @@
+---
+rules:
+  - text: No illegal content in France.
+    priority: 10
+  - text: Do not post hateful content. No discrimination will be tolerated.
+    priority: 20
+  - text: Do not harass anyone, participate in group harassment of anyone. Any kind of harassment won't be tolerated.
+    priority: 30
+  - text: Do not post adult content, including pictures containing nudity, or unwelcome sexual attention (including sexualized comments or jokes).
+    priority: 40
+  - text: "Beware about our term of services: https://mastodon.comwork.io/terms"
+    priority: 50
