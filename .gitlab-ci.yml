@@ -20,6 +20,5 @@ terms:
   rules: 
     - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
-      changes:
-        - terms.html
+  tags:
     - mastodon
