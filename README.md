@@ -19,7 +19,7 @@ The source repository is automatically applying the configuration in a gitops wa
 * Gitlab mirror: https://gitlab.com/ineumann/mastodon-term-services.git
 * Froggit mirror: https://lab.frogg.it/ineumann/mastodon-term-services.git
 
-## Licence
+## Licences
 
 The [terms.html](./terms.html) is under the CC-BY-SA originally adapted from the [Discourse privacy policy](https://github.com/discourse/discourse).
 
