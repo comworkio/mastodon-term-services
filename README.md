@@ -29,7 +29,10 @@ The python [admin](./admin) code is under the apache 2.0 licence.
 
 You can fork this project and run it with gitlab-ci and docker, all you have to do is:
 * Having a gitlab runner hosted in a place that can join your PostgreSQL over TCP
+* Docker and docker-compose
 * Those [environment variables set](./mastodon.env.dist)
+
+Of course you can decide to use something else than docker to run the Python code, or something else than gitlab-ci if you want to use another git provider. Pretty simple to achieve the same thing with Github Action for example.
 
 The ban domains are under the `ban` key in the [config.yaml](./config.yaml) file:
 
