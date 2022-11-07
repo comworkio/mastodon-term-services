@@ -1,5 +1,6 @@
 stages:
   - publish
+  - update
 
 mirror:
   stage: publish
@@ -11,3 +12,19 @@ mirror:
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
     - mirror
+
+terms:
+  stage: update
+  script:
+    - setsid ./ci/update-terms.sh
+  only:
+    refs:
+      - /^(main.*)$/
+    changes:
+      - .gitlab-ci.yml
+      - admin/*
+      - admin/utils/*
+      - ci/update-terms.sh
+      - ci/compute-env.sh
+  tags:
+    - mastodon

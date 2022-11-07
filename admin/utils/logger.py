@@ -1,0 +1,13 @@
+import os
+
+LOG_LEVEL = os.environ['LOG_LEVEL']
+
+def check_log_level ( log_level ):
+    if LOG_LEVEL == "debug" or LOG_LEVEL == "DEBUG":
+        return True
+    else:
+        return log_level != "debug" and log_level != "DEBUG"
+
+def log_msg ( log_level, message ):
+    if check_log_level(log_level):
+        print ("[{}] {}".format(log_level, message))

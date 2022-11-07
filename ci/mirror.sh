@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ./ci/compute-env.sh
+
 REPO_PATH="${PROJECT_HOME}/mastodon-term-services/"
 
 cd "${REPO_PATH}" && git pull origin main || :
