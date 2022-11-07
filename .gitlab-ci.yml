@@ -1,11 +1,11 @@
 stages:
-  - publish
+  - init
   - update
 
-mirror:
-  stage: publish
+init:
+  stage: init
   script:
-    - setsid ./ci/mirror.sh
+    - setsid ./ci/init.sh
   rules: 
     - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
       when: never
@@ -21,10 +21,5 @@ terms:
     - if: $CI_COMMIT_MESSAGE =~ /(Update date terms.html)/
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
       changes:
-        - .gitlab-ci.yml
-        - admin/*
-        - admin/utils/*
-        - ci/update-terms.sh
-        - ci/compute-env.sh
-  tags:
+        - terms.html
     - mastodon
