@@ -8,8 +8,10 @@ rules:
     priority: 30
   - text: Do not post adult content (forbid under the age of 18 according to the French law), including pictures containing nudity, or unwelcome sexual attention (including sexualized comments or jokes).
     priority: 40
+  - text: No spam
+    priority: 60
   - text: "Beware about our term of services: https://mastodon.comwork.io/terms"
-    priority: 50
+    priority: 70
 
 ban:
   - domain: leafposter.club
