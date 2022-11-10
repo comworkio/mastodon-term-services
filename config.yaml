@@ -14,3 +14,169 @@ rules:
 ban:
   - domain: leafposter.club
     comment: Hateful speech coming from users from this instance
+  - domain: 10minutepleroma.com
+    comment: Spam (coming from eupolicy.social)
+  - domain: bae.st
+    comment: Inappropriatecontent (coming from eupolicy.social)
+  - domain: beefyboys.win
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: beta.birdsite.live
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: bird.evilcyberhacker.net
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: bird.froth.zone
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.b93.dece.space
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.cloutier.co
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.darkesttimeline.social
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.frog.fashion
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.gabeappleton.me
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.gred.al
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.monster
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.mastodon.me.uk
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsitelive.treffler.cloud
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.nytpu.com
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsitelive.loca.lt
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsitelive.moistgarbage.info
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsitelive.bubbletea.dev
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.link
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.jemverse.xyz
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.oliviaappleton.com
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.skye.cx
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: bridge.birb.space
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.wilde.cloud
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.vrparty.social
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.toot.si
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.thorlaksson.com
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.spectreos.de
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: birdsite.slashdev.space
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: catgirl.life
+    comment: Harassment (coming from eupolicy.social)
+  - domain: cnet.site
+    comment: Harassment (coming from eupolicy.social)
+  - domain: coom.club
+    comment: Harassment (coming from eupolicy.social)
+  - domain: cum.desupost.soy
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: cum.salon
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: daffodil-11.org
+    comment: Spam (coming from eupolicy.social)
+  - domain: detroitriotcity.com
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: dlf.social
+    comment: Inappropriatecontent (coming from eupolicy.social)
+  - domain: eientei.org
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: eveningzoo.club
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: fedi.app
+    comment: Harassment (coming from eupolicy.social)
+  - domain: freespeechextremist.com
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: freecumextremist.com
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: gab.ai
+    comment: Harassment (coming from eupolicy.social)
+  - domain: gab.com
+    comment: Harassment (coming from eupolicy.social)
+  - domain: gameliberty.club
+    comment: Botthatannouncesblocks (coming from eupolicy.social)
+  - domain: glindr.org
+    comment: Transphobia (coming from eupolicy.social)
+  - domain: getgle.org
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: gitmo.life
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: glowers.club
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: leafposter.club
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: nicecrew.digital
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: ns.auction
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: paypig.org
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: iddqd.social
+    comment: Harassment (coming from eupolicy.social)
+  - domain: kiwifarms.cc
+    comment: Harassment (coming from eupolicy.social)
+  - domain: jaeger.website
+    comment: Harassment (coming from eupolicy.social)
+  - domain: kiwifarms.is
+    comment: Harassment (coming from eupolicy.social)
+  - domain: kiwifarms.net
+    comment: Harassment (coming from eupolicy.social)
+  - domain: mouse.services
+    comment: Harassment (coming from eupolicy.social)
+  - domain: pieville.net
+    comment: Harassment (coming from eupolicy.social)
+  - domain: raplst.town
+    comment: Harassment (coming from eupolicy.social)
+  - domain: twtr.wappie.land
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: wagesofsinisdeath.com
+    comment: Harassment (coming from eupolicy.social)
+  - domain: waifuappreciation.club
+    comment: Harassment (coming from eupolicy.social)
+  - domain: waifu.social
+    comment: Harassment (coming from eupolicy.social)
+  - domain: weedis.life
+    comment: Spam (coming from eupolicy.social)
+  - domain: workers.dev
+    comment: Botnet (coming from eupolicy.social)
+  - domain: yggdrasil.social
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: twtr.vrij.social
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: twtr.plus
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: twtr.carnivore.social
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: twitter.activitypub.actor
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: twitter.1d4.us
+    comment: Third-partybots (coming from eupolicy.social)
+  - domain: spinster.xyz
+    comment: Transphobia (coming from eupolicy.social)
+  - domain: solagg.com
+    comment: Spam (coming from eupolicy.social)
+  - domain: shitpisscum.mooo.com
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: shortstackran.ch
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: ryona.agency
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: rdrama.cc
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: rakket.app
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: poa.st
+    comment: Hatespeech (coming from eupolicy.social)
+  - domain: pleroma.kitsunemimi.club
+    comment: Hatespeech (coming from eupolicy.social)

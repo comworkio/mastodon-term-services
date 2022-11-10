@@ -59,3 +59,18 @@ rules:
 ```
 
 You can adapt those following your convictions and obligations.
+
+## Getting the instances blocked eupolicy.social
+
+Since eupolicy.social seems to comply with our rules, we're following their blocklist.
+
+Here's a way to semi-automate getting their blocked list:
+
+1. Go to [this page](https://eupolicy.social/terms) and copy the "Suspended servers" list in an spreadsheet software (google spreadsheet, excel or libreoffice for example), save-it as a `block.csv` with ";" as separator
+2. Perform this command:
+
+```shell
+cat block.csv|gawk -F ";" '{gsub(/[ \t]*\r?\n?/, "", $2); print "  - domain: "$1"\n    comment: "$2" (coming from eupolicy.social)"}'
+```
+
+Copy the output under the `ban` table in the [config.yaml](./config.yaml) file.
