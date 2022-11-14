@@ -14,8 +14,6 @@ rules:
     priority: 70
 
 ban:
-  - domain: leafposter.club
-    comment: Hateful speech coming from users from this instance
   - domain: 10minutepleroma.com
     comment: Spam (coming from eupolicy.social)
   - domain: bae.st
