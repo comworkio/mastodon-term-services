@@ -1,5 +1,5 @@
 def file_get_contents(path):
-    ''.join(open(path, 'r').readlines())
+    return ''.join(open(path, 'r').readlines())
 
 def file_get_contents_inline(path):
     return file_get_contents(path).rstrip().replace("\n", "").replace("\r", "")
