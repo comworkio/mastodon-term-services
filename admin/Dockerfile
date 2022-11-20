@@ -4,7 +4,8 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONIOENCODING=UTF-8 \
     LOG_LEVEL=INFO \
     TERMS_FILE_PATH=/app/terms.html \
-    CONFIG_FILE=/app/config.yaml
+    CONFIG_FILE=/app/config.yaml \
+    ABOUT_FILE_PATH=/app/about.md
 
 COPY . /app/
 

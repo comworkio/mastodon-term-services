@@ -4,6 +4,8 @@ This is the terms of services of the [mastodon.comwork.io](https://mastodon.comw
 
 You'll find the plain html you can adapt for your own instances here: [terms.html](./terms.html)
 
+You'll also find our "about" summary here: [about.md](./about.md)
+
 You'll also find our rules and banned instances here: [config.yaml](./config.yaml)
 
 The source repository is automatically applying the configuration in a gitops way using this [python project](./admin).

@@ -11,6 +11,16 @@ services:
     volumes:
       - ./terms.html:/app/terms.html
     command: ["python3", "/app/terms.py"]
+  update-about:
+    container_name: mastodon-update-about
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file: 
+      - mastodon.env
+    volumes:
+      - ./about.md:/app/about.md
+    command: ["python3", "/app/about.py"]
   update-rules:
     container_name: mastodon-update-rules
     build: 
