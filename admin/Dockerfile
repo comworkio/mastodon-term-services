@@ -5,7 +5,8 @@ ENV PYTHONUNBUFFERED=1 \
     LOG_LEVEL=INFO \
     TERMS_FILE_PATH=/app/terms.html \
     CONFIG_FILE=/app/config.yaml \
-    ABOUT_FILE_PATH=/app/about.md
+    ABOUT_FILE_PATH=/app/about.md \
+    CUSTOM_CSS_FILE=/app/custom.css
 
 COPY . /app/
 
