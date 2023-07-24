@@ -6,4 +6,4 @@ source ./ci/compute-env.sh
 rm -rf ./admin/custom.css
 cp custom.css ./admin/
 
-docker-compose -f ./admin/docker-compose.yml up ${DOCKER_BUILD_OPT} --force-recreate custom-css
+docker-compose -f ./admin/docker-compose.yml up ${DOCKER_BUILD_OPT} --force-recreate update-css
